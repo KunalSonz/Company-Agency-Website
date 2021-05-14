@@ -1,2 +1,2 @@
 # Company-Website
- HTML + CSS
+ HTML + CSS + Javascript
