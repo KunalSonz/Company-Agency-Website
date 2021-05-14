@@ -1,0 +1,472 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Rubik", sans-serif;
+}
+
+nav {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  z-index: 10;
+}
+
+#fold1 {
+  height: auto;
+  background-color: white;
+  width: 100%;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+}
+
+.navbar h1 {
+  padding-left: 60px;
+}
+
+.togglee {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.fa-chevron-up {
+  display: none;
+}
+
+.fa-chevron-down,
+.fa-chevron-up {
+  font-size: 30px;
+}
+
+#navMenu {
+  position: absolute;
+  display: none;
+  /* display: grid; */
+  grid-template-columns: 80% 20%;
+  z-index: 10;
+  width: 100%;
+
+  background-color: white;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navMenub li {
+  list-style: none;
+  color: black;
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+.navMenub li a:hover,
+.socials li a:hover {
+  color: gray;
+}
+
+.navMenub li a,
+.socials li a {
+  color: black;
+}
+
+.socials li {
+  list-style: none;
+  color: black;
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+.imgHome img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  width: 60%;
+}
+
+.contHome {
+  position: absolute;
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  height: 90vh;
+  z-index: 4;
+  max-width: 60%;
+}
+
+.contHomea a {
+  background-color: powderblue;
+  color: black;
+  padding: 10px 20px 10px 20px;
+  top: 20px;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btnhome:hover {
+  transform: scale(1.1);
+}
+
+.serviceFold1 {
+  padding: 50px 140px 0px 140px;
+}
+
+.serviceFold2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px 70px 50px 70px;
+}
+
+.service {
+  margin: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+
+  box-shadow: 0px 9px 52px -22px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 9px 52px -22px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 52px -22px rgba(0, 0, 0, 0.75);
+}
+
+.service:hover {
+  box-shadow: 0px 9px 22px 4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 9px 22px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 9px 22px 4px rgba(0, 0, 0, 0.75);
+}
+
+.workfold1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 70px;
+}
+
+.workbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 270px;
+}
+
+.workbtn a {
+  display: none;
+}
+
+/* .workfold1a:hover .workbtn a,
+.workfold1b:hover .workbtn {
+  background-color: rgb(0, 0, 0, 0.6);
+  width: 100%;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.workfold1a:hover .workbtn a,
+.workfold1b:hover .workbtn a,
+.workfold1c:hover .workbtn a,
+.workfold1d:hover .workbtn a,
+.workfold1e:hover .workbtn a,
+.workfold1f:hover .workbtn a,
+.workfold1g:hover .workbtn a {
+  display: block;
+  background-color: rgb(0, 0, 0, 0.6);
+  color: white;
+  font-size: 20px;
+  border: 3px solid white;
+  padding: 15px;
+}
+
+.workfold1a {
+  width: 100%;
+  height: 300px;
+  background-image: url(wb1.png);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  padding: 30px;
+}
+
+.workfold1b {
+  width: 100%;
+  height: 300px;
+  background-image: url(wb2.png);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  padding: 30px;
+}
+
+.workfold1c {
+  width: 100%;
+  height: 300px;
+  background-image: url(wb3.png);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  padding: 30px;
+}
+
+.workfold1d {
+  width: 100%;
+  height: 300px;
+  background-image: url(wb4.png);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.workfold1e {
+  width: 100%;
+  height: 300px;
+  background-image: url(wb5.png);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.workfold1f {
+  width: 100%;
+  height: 300px;
+  background-image: url(wb6.png);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.workfold1g {
+  width: 100%;
+  height: 300px;
+  background-image: url(wb7.png);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.contactFold1 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 100%;
+}
+
+.contactForm {
+  padding-left: 70px;
+  background: rgb(241, 241, 241);
+  background: linear-gradient(
+    0deg,
+    rgba(241, 241, 241, 1) 55%,
+    rgba(255, 255, 255, 1) 88%
+  );
+
+  width: 100%;
+}
+
+.contactForm form {
+  width: 100%;
+}
+
+.rows {
+  display: flex;
+  width: 100%;
+}
+
+.input50 {
+  width: 50%;
+  margin: 20px 30px 20px 30px;
+}
+
+.input100 {
+  width: 100%;
+  margin: 20px 30px 20px 30px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+}
+
+.formSub {
+  background-color: powderblue;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+.otherContact {
+  /* border: 2px solid black; */
+  margin-right: 100px;
+  /* background: rgb(233, 232, 232);
+  background: linear-gradient(
+    0deg,
+    rgba(233, 232, 232, 1) 55%,
+    rgba(255, 255, 255, 1) 88%
+  );   */
+  background: rgb(241, 241, 241);
+  background: linear-gradient(
+    0deg,
+    rgba(241, 241, 241, 1) 55%,
+    rgba(255, 255, 255, 1) 88%
+  );
+}
+
+.otherTop,
+.otherMid,
+.otherBot {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  padding: 30px;
+}
+
+.otherTop i,
+.otherMid i,
+.otherBot i {
+  color: turquoise;
+  font-size: 25px;
+}
+
+.otherTop h5,
+.otherMid h5,
+.otherBot h5 {
+  color: turquoise;
+}
+
+.otherTop p,
+.otherMid p,
+.otherBot p {
+  color: black;
+}
+
+@media only screen and (max-width: 1068px) {
+  .imgHome img {
+    width: 100%;
+  }
+
+  .serviceFold2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contactFold1 {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .imgHome img {
+    width: 100%;
+  }
+
+  .serviceFold2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contactFold1 {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  ul {
+    padding-left: 0px;
+  }
+
+  .socials li {
+    padding-right: 10px;
+  }
+
+  .serviceFold2 {
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .imgHome img {
+    display: none;
+  }
+
+  .contHome {
+    max-width: 100%;
+  }
+
+  #navMenu {
+    grid-template-columns: 100%;
+  }
+
+  .serviceFold1 {
+    padding: 50px 20px 50px 20px;
+  }
+
+  .serviceFold2 {
+    grid-template-columns: 1fr;
+  }
+
+  .workfold1 {
+    grid-template-columns: 1fr;
+  }
+
+  .contactFold1 {
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+  }
+
+  .contactForm {
+    padding-left: 0px;
+  }
+
+  .otherContact {
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .imgHome img {
+    display: none;
+  }
+
+  .contHome {
+    max-width: 100%;
+  }
+
+  #navMenu {
+    grid-template-columns: 100%;
+  }
+
+  .serviceFold1 {
+    padding: 50px 20px 50px 20px;
+  }
+
+  .serviceFold2 {
+    grid-template-columns: 1fr;
+  }
+
+  .workfold1 {
+    grid-template-columns: 1fr;
+  }
+
+  .contactFold1 {
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+  }
+
+  .contactForm {
+    padding-left: 0px;
+  }
+
+  .otherContact {
+    margin-right: 0px;
+  }
+}
